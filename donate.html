@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhyaan - Donate</title>
+    <style>
+        /* Reset Defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Header */
+        header {
+            background: url('images/backgroundImg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 48px;
+            z-index: 1;
+        }
+
+        /* Donate Section */
+        .donate-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .donate-container h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .donate-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .donation-option {
+            margin: 10px;
+            padding: 15px 30px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .donation-option:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .donate-input {
+            margin-top: 20px;
+        }
+
+        .donate-input input {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .donate-btn {
+            margin-top: 20px;
+            background: #28a745;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .donate-btn:hover {
+            background: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Adhyaan</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="vounteer.html">Volunteer</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Support Our Cause</h1>
+    </header>
+
+    <!-- Donate Section -->
+    <section class="donate-container">
+        <h2>Your Support Makes a Difference</h2>
+        <p>Your contributions help us continue our efforts and make a positive impact. Choose an amount or enter a custom donation.</p>
+
+        <div class="donation-options">
+            <div class="donation-option">Rs.500</div>
+            <div class="donation-option">Rs.1000</div>
+            <div class="donation-option">Rs.2000</div>
+            <div class="donation-option">Rs.5000</div>
+        </div>
+
+        <div class="donate-input">
+            <input type="number" placeholder="Enter custom amount (e.g., Rs.1500)">
+        </div>
+
+        <button class="donate-btn">Donate Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Adhyaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

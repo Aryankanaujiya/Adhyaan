@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhyaan - Empowering Through Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div  class="hi">
+            <div class="logo">Adhyaan</div>
+            <ul class="nav-links">
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="vounteer.html">Volunteer</a></li>
+            </ul>
+            <ul class="nav-links2">
+                <li class="boxed"><a href="login.html">Login</a></li>
+                <li class="boxed"><a href="registration.html">Register</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="overlay">
+            <h1>Empowering Communities</h1>
+            <p>Together, we can make a difference.</p>
+            <a href="#donate" class="cta-btn">Donate Now</a>
+        </div>
+    </section>
+
+    <section id="mission" class="content-section">
+        <h2>Our Mission</h2>
+        <p>At Adhyaan, we aim to provide underprivileged children access to quality education and opportunities for a brighter future. Our mission is to bridge the gap between dreams and reality through dedicated community support and resources.</p>
+    </section>
+
+    <section id="events" class="content-section">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Education Drive</h3>
+            <p>Date: January 20, 2024 | Location: Community Center, Cityville</p>
+            <p>Join us for a day of workshops, tutoring, and resource distribution to support children in need.</p>
+        </div>
+        <div class="event">
+            <h3>Fundraising Gala</h3>
+            <p>Date: February 15, 2024 | Location: Grand Hall, Cityville</p>
+            <p>A night of celebration, networking, and supporting education for all.</p>
+        </div>
+    </section>
+
+    <section id="donate" class="content-section">
+        <h2>Support Our Cause</h2>
+        <p>Your contributions can change lives. Help us provide education to those who need it most.</p>
+        <a href="donate.html" class="cta-btn">Donate Now</a>
+    </section>
+
+    <section id="volunteer" class="content-section">
+        <h2>Volunteer With Us</h2>
+        <p>Be a part of our journey to make education accessible for everyone. Join our team of dedicated volunteers.</p>
+        <a href="vounteer.html" class="cta-btn">Sign Up to Volunteer</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Adhyaan | All rights reserved | <a href="#">Privacy Policy</a></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script>
+    // Redirect to Donate Page when "Donate Now" button is clicked
+    document.querySelectorAll('.cta-btn').forEach(button => {
+        button.addEventListener('click', function (e) {
+            if (this.textContent === 'Donate Now') {
+                e.preventDefault(); // Prevent default action of link
+                alert("Thank You! Redirecting to Donation page")
+                window.location.href = 'donate.html'; // Redirect to donate page
+            }
+            if (this.textContent === 'Sign Up to Volunteer') {
+                e.preventDefault(); // Prevent default action of link
+                alert("Thank You! Redirecting to Volunter page")
+                window.location.href = 'vounteer.html'; // Redirect to donate page
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

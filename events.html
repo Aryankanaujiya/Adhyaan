@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhyaan - Events</title>
+    <style>
+        /* Reset Defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Header */
+        header {
+            background: url('images/backgroundImg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 48px;
+            z-index: 1;
+        }
+
+        /* Events Section */
+        .events-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .events-container h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .event {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .event img {
+            width: 100%;
+            max-width: 400px;
+            object-fit: cover;
+        }
+
+        .event-details {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .event-details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .event-details p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Adhyaan</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="vounteer.html">Volunteer</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events-container">
+        <h2>Join Our Upcoming Activities</h2>
+
+        <!-- Event 1 -->
+        <div class="event">
+            <img src="images/community gathering1.jpg" alt="Event 1">
+            <div class="event-details">
+                <h3>Community Gathering</h3>
+                <p>Join us for a day filled with interaction, activities, and shared experiences. A perfect opportunity to meet like-minded individuals and connect with the community. Date: 20th July, 2024.</p>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event">
+            <img src="images/wellness workshop.png" alt="Event 2">
+            <div class="event-details">
+                <h3>Wellness Workshop</h3>
+                <p>Experience a refreshing session where you can learn tips for better well-being and self-care. All are welcome to participate and enjoy the day together! Date: 15th August, 2024.</p>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event">
+            <img src="images/outdoor volunteering.png" alt="Event 3">
+            <div class="event-details">
+                <h3>Outdoor Volunteering</h3>
+                <p>Engage in our outdoor volunteering program. Help create a positive impact while enjoying fun and productive activities with friends and family. Date: 5th September, 2024.</p>
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <h2>Event Highlights</h2>
+        <div class="image-gallery">
+            <img src="images/image10.png" alt="Gallery Image 1">
+            <img src="images/image11.png" alt="Gallery Image 2">
+            <img src="images/image12.png" alt="Gallery Image 3">
+            <img src="images/image13.png" alt="Gallery Image 4">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Adhyaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhyaan - Our Mission</title>
+    <style>
+        /* Reset Defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: url('images/backgroundImg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 48px;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Mission Section */
+        .mission-content {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .mission-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .mission-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            margin: 40px auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Adhyaan</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="vounteer.html">Volunteer</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Our Mission</h1>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission-content">
+        <h2>Making Education Accessible</h2>
+        <p>
+            At Adhyaan, we aim to provide underprivileged children access to quality education and opportunities for a brighter future. 
+            Our mission is to bridge the gap between dreams and reality through dedicated community support and resources.
+        </p>
+        <p>
+            We believe that education has the power to transform lives. Through various initiatives, we strive to ensure that every child, 
+            regardless of their circumstances, has the tools and opportunities they need to succeed.
+        </p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+        <img src="images/image9.png" alt="Mission Image 1">
+        <img src="images/image3.png" alt="Mission Image 2">
+        <img src="images/image4.png" alt="Mission Image 3">
+        <img src="images/image5.png" alt="Mission Image 4">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Adhyaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
